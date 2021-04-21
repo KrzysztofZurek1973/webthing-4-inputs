@@ -1,0 +1,47 @@
+menu "Inputs config"
+
+config INPUT_1_GPIO
+	int "GPIO number for INPUT-1"
+	range 0 34
+	default 32
+	help
+		GPIO number for INPUT-1.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only.
+		
+config INPUT_2_GPIO
+	int "GPIO number for INPUT-2"
+	range 0 34
+	default 33
+	help
+		GPIO number for INPUT-2.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only.
+		
+config INPUT_3_GPIO
+	int "GPIO number for INPUT-3"
+	range 0 34
+	default 25
+	help
+		GPIO number for INPUT-3.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only.
+		
+config INPUT_4_GPIO
+	int "GPIO number for INPUT-4"
+	range 0 34
+	default 26
+	help
+		GPIO number for INPUT-4.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only.
+
+endmenu
